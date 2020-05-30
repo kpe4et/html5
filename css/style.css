@@ -1,0 +1,475 @@
+.container {
+    width: 1280px;
+    margin: 0 auto;
+    font-family: arial;
+}
+
+.site-header {
+    background-color: #445162;
+    padding: 50px;
+    color: #fff;
+}
+
+.site-header::after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both; 
+}
+
+.txt-header {
+    float: left;
+}
+
+.header-txt {
+/*    да, я заметил, что все h2 имеют одинаковые стили, но решил описывать по отдельности */
+    font-size: 60px;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    line-height: 100%;
+}
+
+.header-txt-list {
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+
+.header-txt-item {
+    font-size: 20px; 
+    line-height: 36px;
+    font-weight: 400;
+    list-style-type: none;
+    position: relative;
+    
+}
+
+.header-txt-item::before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 15px;
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    background-image: url(../img/marker.png);
+/*    я мог бы для экономии трафика повесить сюда цвет, но нет    */
+    background-size: cover;
+}
+
+.header-img {
+    float: right;
+    display: block;
+    min-height: 100px;
+}
+
+.main-desctiption {
+    padding: 50px;
+}
+
+.main-desctiption:after {
+content: "";
+display: block;
+width: 100%;
+clear: both;
+}
+
+.description-video {
+    float: right;
+    margin-left: 100px;
+}
+
+.description-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+    margin: 0 0 30px 0;
+}
+
+.description-p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+    margin: 0 0 20px 0;
+}
+
+.description-p:last-child {
+    margin: 0;
+}
+
+.main-dignity {
+    background-color: #f5f5f5;
+    padding: 49px;
+}
+
+.dignity-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+    text-align: center;
+    margin: 0 0 29px 0;
+}
+
+.dignity-details {
+    text-align: justify;
+    text-align-last: justify;
+    margin: 0;
+}
+
+
+.dignity-summary {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+    list-style-type: none;
+    position: relative;
+    width: 527px;
+    margin: 0 23px 35px 0px;
+    display: inline-block;
+}
+
+.dignity-summary::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url(../img/dignity_cross.png) no-repeat #333333 center;
+    position: absolute;
+    top: 8px;
+    left: -39px;
+}
+
+.dignity-summary:nth-child(5),
+.dignity-summary:nth-child(6) {
+    margin: 0 23px 0 0;
+}
+
+.main-screenshots {
+    padding: 50px;
+}
+
+.screen-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+    text-align: center;
+    margin: 0 0 34px 0;
+}
+
+.screen-figure {
+    width: 580px;
+    margin: 0 0 20px 0;
+    display: inline-block;
+}
+
+.screen-figure:nth-child(4),
+.screen-figure:nth-child(5) {
+    margin: 0;
+}
+
+.screen-img {
+    float: left;
+    margin-right: 15px;
+    margin-left: 0;
+}
+
+.screen-cap {
+}
+
+.screen-cap-title {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #445161;
+    margin: 0 0 15px 0;
+}
+
+.screen-cap-p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+    margin: 0;
+}
+
+.main-reviews {
+    padding: 50px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.review-title {
+    width: 100%;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+    text-align: center;
+    margin: 0 0 35px 0;
+}
+
+.review-figure {
+    width: 49%;
+    display: flex;
+    margin: 0;
+}
+
+.review-figure:nth-child(4),
+.review-figure:nth-child(5) {
+    margin: 24px 0 0 0;
+}
+
+.review-img {
+    border-radius: 50%;
+    margin-right: 28px;
+}
+
+.review-cap {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    background-color: #ebebeb;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.revcap-p-post {
+    font-style: italic;
+    color: #333333;
+    margin: 0;
+    position: relative;
+}
+
+.revcap-p-post::before {
+    content: "";
+    border: 12px solid transparent; border-right: 12px solid #ebebeb;
+    position: absolute;
+    top: 8px;
+    left: -39px;
+}
+
+.revcap-p-name {
+    color: #989898;
+    margin: 15px 0 0 0;
+}
+
+.main-buy {
+    padding: 50px;
+}
+
+.buy-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+    margin: 0 0 29px 0;
+    text-align: center;
+}
+
+.buy-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.buy-plan {
+    width: 300px;
+    border: 2.0px solid #445162;
+    background-color: #445162;
+    line-height: 30px;
+    font-weight: 400;
+    padding: 0 0 10px 0;
+    border-radius: 5px;
+}
+
+.buy-plan-title {
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.buy-plan-price {
+    font-size: 40px;
+    color: #445162;
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    margin: 0;
+    width: 100%;
+}
+
+.buy-plan-list {
+    color: #ffffff;
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    list-style-position: inside;
+    padding: 20px;
+}
+
+.border-radius {
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+.buy-plan-btn {
+    display: block;
+    width: 260px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #445161;
+    outline: none;
+}
+
+.buy-plan-btn:hover {
+    background-color: #445161; 
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.buy-plan-btn:active {
+    background-color: #00008B; 
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.footer {
+    background-color: #445162;
+    padding: 50px 245px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 0 31px 0;
+    width: 100%;
+}
+
+.footer-form {
+    width: 500px;
+    text-align: center;
+}
+
+.footer-form-inputs {
+    width: 100%;
+    margin-bottom: 21px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #445162;
+}
+
+input[type="submit"] {
+    padding: 14px 48px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #445162;
+}
+
+.footer-contacts {
+    padding: 0;
+    position: relative;
+}
+
+.footer-contacts-msgr {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+/*
+.footer-contacts-msgr:first-child {
+    line-height: 0px; 
+}
+*/
+
+.footer-contacts-msgr-icons {
+    position: absolute;
+    top: 13px;
+    left: 4px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.footer-images {
+    margin-bottom: 23px;
+}
+
+/* ниасилил
+@font-face{
+        font-family:socialico;
+        src:url('fonts/Socialico.eot');
+        src:url('fonts/Socialico.eot?#iefix') format('embedded-opentype'),
+          url('fonts/Socialico.ttf') format('truetype');
+        font-weight:normal;
+        font-style:normal;
+      }
+*/
+
+.footer-contacts-social {
+    font-family: Socialico;
+    height: 42px;
+    width: 240px;
+    display: flex;
+}
+
+.socials {
+    width: 42px;
+    height: 42px;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+.social-link {
+    display: block;
+    height: 100%;
+    color: aliceblue;
+    border-radius: 50%;
+}
+
+.footer-copyrignt {
+    width: 100%;
+    min-height: 26px;
+    text-align: center;
+    background-color: #f5f5f5;
+    font-size: 12px;
+    padding: 7px 0;
+    line-height: 24px;
+}
