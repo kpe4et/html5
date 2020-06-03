@@ -422,8 +422,37 @@ input[type="submit"]:active {
     list-style: none;
     margin-bottom: 30px;
     text-decoration: none;
+    position: relative;
 }
 
+.footer-contacts-msgr::before {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: -5px;
+    left: -33px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer-contacts-msgr:first-child:before {
+    background-image: url("../img/skype.png");
+}
+
+.footer-contacts-msgr:nth-child(2):before {
+    background-image: url("../img/icq.png");
+}
+
+.footer-contacts-msgr:nth-child(3):before {
+    background-image: url("../img/email.png");
+}
+
+.footer-contacts-msgr:nth-child(4):before {
+    background-image: url("../img/phone.png");
+}
+/*
 .footer-contacts-msgr-icons {
     position: absolute;
     top: 13px;
@@ -431,6 +460,7 @@ input[type="submit"]:active {
     display: inline-flex;
     flex-direction: column;
 }
+*/
 
 .footer-images {
     margin-bottom: 23px;
