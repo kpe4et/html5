@@ -452,20 +452,10 @@ input[type="submit"]:active {
 .footer-contacts-msgr:nth-child(4):before {
     background-image: url("../img/phone.png");
 }
-/*
-.footer-contacts-msgr-icons {
-    position: absolute;
-    top: 13px;
-    left: 4px;
-    display: inline-flex;
-    flex-direction: column;
-}
-*/
 
 .footer-images {
     margin-bottom: 23px;
 }
-
 
 .footer-contacts-social {
     font-size: 40px;
